@@ -1,0 +1,5 @@
+
+1. git clone https://github.com/Nupur-work/master.git  
+2. cd master/Git-Search-App
+3. npm install
+4. ng serve --open
