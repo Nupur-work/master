@@ -1,0 +1,16 @@
+<div class="search-results" infinite-scroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50"
+    (scrolled)="onScrollDown()" [scrollWindow]="false">
+    <div *ngFor="let item of searchData" class="detail-div">
+
+        <div style="display:inline-flex;">
+            <app-image [imageUrl]="item['owner']['avatar_url']"></app-image>
+            <div style="margin-top: -22px;
+            margin-left: 20px;">
+                <p><b>Name :</b> <a [href]="item['clone_url']" target="_blank">{{item['name']}}</a>
+                    &nbsp;&nbsp;<b>Description</b> {{item['description']}}</p>
+                <p><b>License : </b>{{ (item['license'] && item['license']['key'] ) || "Not Available"}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>

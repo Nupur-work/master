@@ -1,0 +1,9 @@
+<div class="main-container">
+    <p class="large-text">You can search git Repositories here</p>
+
+    <input id="searcher" placeholder="Search Repositories..." type="text" [(ngModel)]="searchText"
+        (input)="search($event)" (keyup)="search($event)" />
+
+    <app-infinite-scroll *ngIf="searchRepos.length>0" [searchData]="searchRepos"></app-infinite-scroll>
+
+</div>

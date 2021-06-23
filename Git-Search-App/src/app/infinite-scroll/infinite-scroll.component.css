@@ -1,0 +1,28 @@
+li {   
+    padding: 10px;
+    border-radius: 30px;    
+    box-shadow: 0 0 15px 4px rgb(0 0 0 / 6%);
+    width: 200px;   
+}
+
+ul{
+    list-style-type:none;
+}
+.search-results {
+    height: 470px;
+    overflow: scroll;
+    width: fit-content;
+}
+.detail-div:hover {
+    transform: scale(1.02);
+}
+.detail-div {
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px 4px rgb(0 0 0 / 6%);
+    width: 545px;
+    margin: 10px;
+  
+
+}
